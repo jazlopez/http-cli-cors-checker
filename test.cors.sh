@@ -53,7 +53,7 @@ echo "From:       ${ORIGIN_HOST}"
 echo "Cookies:    ${COOKIES}"
 echo "----"
 
-curl -I -L ${TARGET_URL} -X GET \
+curl -I -L ${TARGET_URL} -X OPTIONS \
   -H "Access-Control-Request-Method: OPTIONS" \
   -H "Origin: ${ORIGIN_HOST}" \
   -H 'Cache-Control: no-cache, no-store' \
